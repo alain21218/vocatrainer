@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TextComponent } from './text/text.component';
 import { ButtonComponent } from './button/button.component';
 import { ImageComponent } from './image/image.component';
+import { ImageZoomDirective } from '../module-shared/image-zoom.directive';
 
 @NgModule({
   imports: [
@@ -19,7 +20,9 @@ import { ImageComponent } from './image/image.component';
     FooterComponent, 
     TextComponent, 
     ButtonComponent, 
-    ImageComponent],
+    ImageComponent,
+    ImageZoomDirective
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,
@@ -29,7 +32,8 @@ import { ImageComponent } from './image/image.component';
 
     FormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    ImageZoomDirective
   ]
 })
 export class SharedModuleModule { }

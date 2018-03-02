@@ -1,0 +1,26 @@
+{
+  "categories": [
+    "categ 1",
+    "categ 2",
+    "categ 3",
+    "categ 4"
+  ],
+  "users": [
+    {
+      "id": 1,
+      "login": "test",
+      "alias": "testing",
+      "email": "test@test.test"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "text": "hello world",
+      "date": "01/01/2018",
+      "userId": 1
+    }
+  ],
+  "posts": {}
+}

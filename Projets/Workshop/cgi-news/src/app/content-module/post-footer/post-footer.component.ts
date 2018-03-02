@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PostFooterComponent implements OnInit {
 
   constructor() { 
-    console.log($);
+    
   }
 
 

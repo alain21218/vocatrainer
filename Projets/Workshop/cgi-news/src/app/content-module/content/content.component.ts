@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostServiceService } from '../../services-module/post-service.service';
 
 @Component({
   selector: 'cs-content',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private postService:PostServiceService) { 
+    console.log(this.postService);
+  }
 
   ngOnInit() {
   }

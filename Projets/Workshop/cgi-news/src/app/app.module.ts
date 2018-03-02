@@ -8,6 +8,7 @@ import { SharedModuleModule } from './shared-module/shared-module.module';
 import { ContentModuleModule } from './content-module/content-module.module';
 import { NavigationModuleModule } from './navigation-module/navigation-module.module';
 import { ServicesModuleModule } from './services-module/services-module.module';
+import { PostServiceService } from './services-module/post-service.service';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   providers: [
-    
+    PostServiceService
   ],
   bootstrap: [AppComponent]
 })
