@@ -1,0 +1,40 @@
+:host {
+    display: block;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 200px;
+    font-size: 18px;
+
+    z-index: 999;
+}
+
+.navbar {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+}
+
+li.current{
+    background: white;
+    border-bottom: 3px solid #55acee;
+}
+
+li.current:hover{
+    background: white;
+    border-bottom: none;
+}
+
+.navbar a{
+    color: #55acee;
+}
+
+.navbar li:hover a, .navbar li:active a{
+    color: #55acee;
+}
+
+.navbar li:hover>a{
+    border-bottom: 3px solid #55acee;
+}

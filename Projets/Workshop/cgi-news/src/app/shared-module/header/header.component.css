@@ -1,0 +1,64 @@
+:host {
+    display: block;
+    background: url("/assets/img/twitter_banner.png");
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+
+    z-index: 999;
+}
+
+.top-bar {
+    margin-top: 30px;
+    display: flex;
+}
+
+.top-bar .btn-lg {
+    padding: 10px 30px;
+}
+
+.button-group {
+    flex: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button-group *{
+    margin: 0 5px;
+}
+
+.main-icon {
+    font-size: 40px;
+    color: white;
+}
+
+.btn-outline-light, .btn-light{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    color: white;
+}
+
+.btn-light {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.top-content{
+    color: white;
+    text-align: center;
+}
+
+.top-title, .top.content {
+    display: inline-block;
+    width: 500px;
+}
+
+.top-title {
+    font-size: 30px;
+}
+
+.top-description {
+    font-size: 20px;
+}

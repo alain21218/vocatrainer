@@ -1,0 +1,10 @@
+:host {
+    display: inline-block;
+    margin: 10px;
+
+    background: white;
+}
+
+.card-body {
+    padding: 5px;
+}
