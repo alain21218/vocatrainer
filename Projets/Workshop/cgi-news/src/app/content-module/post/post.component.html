@@ -1,10 +1,11 @@
 <div class="card">
   <div class="card-header">
-    <img class="card-img-top" src="https://picsum.photos/300?random">
+    <img class="card-img-top" [src]="post.image">
   </div>
   <div class="card-body">
-      <h5 class="card-title">Title</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptates, repellendus ipsum recusandae tenetur cumque eos sint tempora odio alias quis laboriosam velit excepturi atque porro qui nemo consequatur fugit.</p>
+      <h5 class="card-title">{{ post.title }}</h5>
+      <small>{{ post.date | date: "dd MMMM yyyy" }}</small>
+      <p class="card-text">{{ post.text }}</p>
   </div>
 </div>
-<cs-post-footer *withComments></cs-post-footer>
+<cs-post-footer [comments]="post.comments" *withComments></cs-post-footer>

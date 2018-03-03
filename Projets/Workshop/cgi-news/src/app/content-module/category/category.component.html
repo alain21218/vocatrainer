@@ -1,10 +1,1 @@
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
-<cs-post imageZoom="2"></cs-post>
+<cs-post *ngFor="let post of posts" [post]="post" imageZoom="1.5"></cs-post>

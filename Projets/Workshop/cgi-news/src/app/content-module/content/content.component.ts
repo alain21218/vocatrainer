@@ -9,7 +9,7 @@ import { PostServiceService } from '../../services-module/post-service.service';
 export class ContentComponent implements OnInit {
 
   constructor(private postService:PostServiceService) { 
-    console.log(this.postService);
+    
   }
 
   ngOnInit() {

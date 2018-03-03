@@ -38,3 +38,8 @@ li.current:hover{
 .navbar li:hover>a{
     border-bottom: 3px solid #55acee;
 }
+
+input, button {
+    margin: 10px;
+    padding: 3px;
+}

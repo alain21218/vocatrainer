@@ -1,8 +1,4 @@
-<h4>Categ 1</h4>
-<cs-category></cs-category>
-<h4>Categ 2</h4>
-<cs-category></cs-category>
-<h4>Categ 3</h4>
-<cs-category></cs-category>
-<h4>Categ 4</h4>
-<cs-category></cs-category>
+<div *ngFor="let categ of postService.categories">
+    <h4>{{ categ.name }}</h4>
+    <cs-category [categId]="categ.id"></cs-category>
+</div>

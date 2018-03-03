@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PostServiceService } from '../../services-module/post-service.service';
 
 @Component({
   selector: 'cs-category',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
-  constructor() { }
+  @Input()categId:number;
+  posts:Array<Post>;
 
+  constructor(private postService: PostServiceService) {
+  }
+  
   ngOnInit() {
+    this.posts = this.postService.postsByCateg(this.categId);
   }
 
 }

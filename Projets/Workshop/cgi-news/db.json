@@ -1,16 +1,34 @@
 {
   "categories": [
-    "categ 1",
-    "categ 2",
-    "categ 3",
-    "categ 4"
+    {
+      "id": 1,
+      "name": "Game"
+    },
+    {
+      "id": 2,
+      "name": "Video"
+    },
+    {
+      "id": 3,
+      "name": "Music"
+    },
+    {
+      "id": 4,
+      "name": "test"
+    }
   ],
   "users": [
     {
       "id": 1,
-      "login": "test",
-      "alias": "testing",
-      "email": "test@test.test"
+      "login": "SuperAdmin",
+      "alias": "Admin",
+      "email": "admin@test.test"
+    },
+    {
+      "id": 2,
+      "login": "Leix",
+      "alias": "Leixounet",
+      "email": "leix@test.test"
     }
   ],
   "comments": [
@@ -18,9 +36,97 @@
       "id": 1,
       "postId": 1,
       "text": "hello world",
-      "date": "01/01/2018",
+      "date": "02/03/2018",
       "userId": 1
+    },
+    {
+      "postId": 2,
+      "text": "hello worldd",
+      "date": "02/03/2018",
+      "userId": 2,
+      "id": 2
     }
   ],
-  "posts": {}
+  "posts": [
+    {
+      "id": 1,
+      "title": "GTA V perd des joueurs",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AyNbBMDv7rKcBNG0-uEiDy-mRgklIZ6kliS4oInEVdh2VbwK3Q",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 1
+    },
+    {
+      "title": "Les meilleurs jeux du moment",
+      "image": "http://dreamicus.com/data/game/game-02.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 1,
+      "id": 2
+    },
+    { 
+      "title": "Rétro gaming",
+      "image": "https://i.pinimg.com/736x/54/4c/51/544c517be366ac06560c05fbce3f761a--man-games-retro-gamer.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 1,
+      "id": 3
+    },
+    {
+      "title": "Un chat trop mignon se fait dévorer",
+      "image": "http://a141.idata.over-blog.com/300x300/0/19/49/05/2010/Divers/cineexpos-./1192808984.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 2,
+      "id": 4
+    },
+    {
+      "title": "Il glisse pendant la remise des Awards",
+      "image": "https://www.wedze.fr/sites/wedze/files/mieux_tourner_ski_photo.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 2,
+      "id": 5
+    },
+    {
+      "title": "Calvin Harris sort un nouveau titre",
+      "image": "https://a4-images.myspacecdn.com/images04/1/2b69174db2ee4fc494f2667ca48f2820/300x300.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 3,
+      "id": 6
+    },
+    {
+      "title": "Le retour de Beyonce",
+      "image": "http://s.huffpost.com/contributors/beyonce-knowlescarter/headshot.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 3,
+      "id": 7
+    },
+    {
+      "title": "Bruno Mars: Le nouveau Jakson ?",
+      "image": "https://vz.cnwimg.com/thumbc-300x300/wp-content/uploads/2010/09/Bruno-Mars-e1500395983340.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 3,
+      "id": 8
+    },
+    {
+      "title": "La danse des canard version hard rock",
+      "image": "https://i.pinimg.com/736x/2f/d7/4e/2fd74ee7413ba0ca878093143ba441bc--rubber-ducky-party-rock-star-party.jpg",
+      "date": "02/03/2018",
+      "userId": 1,
+      "categoryId": 3,
+      "id": 9 
+    },
+    {
+      "title": "Hello world 3",
+      "image": "https://timbuktoo.name/wp-content/uploads/2016/08/Placeholder-300-300.png",
+      "date": "01/01/2018",
+      "userId": 1,
+      "categoryId": 4,
+      "id": 10
+    }
+  ]
 }

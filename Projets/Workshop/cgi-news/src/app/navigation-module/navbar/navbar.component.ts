@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { PostServiceService } from '../../services-module/post-service.service';
 
 @Component({
   selector: 'cs-navbar',
@@ -7,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  private _search = "";
+
+  @Input()
+  get search() {
+    return this._search;
+  }
+
+  @Output() searchChange = new EventEmitter();
+  set search(val) {
+    this._search = val;
+    this.searchChange.emit(this._search);
+  }
+
+
+  constructor(private postService:PostServiceService) { }
 
   ngOnInit() {
   }

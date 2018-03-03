@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PostServiceService } from '../../services-module/post-service.service';
 
 @Component({
   selector: 'cs-post',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
+
+  @Input()post:Post;
 
   constructor() { }
 

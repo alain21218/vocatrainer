@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NavItemComponent } from './nav-item/nav-item.component';
-import { NavSearchComponent } from './nav-search/nav-search.component';
+import { FormsModule } from "@angular/forms"
+
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule
   ],
   declarations: [
     NavbarComponent, 
-    NavItemComponent, 
-    NavSearchComponent
   ],
   exports: [
     NavbarComponent
