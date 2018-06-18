@@ -1,0 +1,6 @@
+<div class="row">
+  <div *ngFor="let hobby of profile.hobbies" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <p><i class="fa fa-{{ hobby.image }}"></i></p>
+    <p>{{ hobby.title }}</p>
+  </div>
+</div>

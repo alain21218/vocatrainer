@@ -1,0 +1,8 @@
+<fieldset *ngFor="let skill of profile.skills">
+  <legend>{{ skill.title }}</legend>
+  <div *ngFor="let tool of skill.tools">
+    <h6>{{ tool.title }}</h6>
+    <p>{{ tool.examples }}</p>
+    <cs-progress [value]="tool.percent"></cs-progress>
+  </div>
+</fieldset>

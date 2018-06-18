@@ -1,0 +1,37 @@
+<h4>{{ profile.firstname }} {{ profile.lastname }}</h4>
+<h5>{{ profile.job }}</h5>
+<div class="row">
+  <div class="col-md-6 col-xs-12">
+    <table>
+      <tr>
+        <td class="title">Nom</td>
+        <td>{{ profile.firstname }} {{ profile.lastname }}</td>
+      </tr>
+      <tr>
+        <td class="title">Naissance</td>
+        <td>{{ profile.birthdate | date:'dd MMMM yyyy' }}</td>
+      </tr>
+      <tr>
+        <td class="title">Adresse</td>
+        <td>{{ profile.address }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-md-6 col-xs-12">
+    <table>
+      <tr>
+        <td class="title">Disponible</td>
+        <td>{{ profile.free ? 'Oui' : 'Non' }}</td>
+      </tr>
+      <tr>
+        <td class="title">Mobilité</td>
+        <td>{{ profile.range | join }}</td>
+      </tr>
+      <tr>
+        <td class="title">Permis</td>
+        <td>{{ profile.car }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

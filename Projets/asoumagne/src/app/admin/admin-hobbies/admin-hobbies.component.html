@@ -1,0 +1,7 @@
+<span>Loisirs</span>
+<button (click)="addHobby()"><i class="fa fa-plus"></i></button>
+<div *ngFor="let hobby of profile.hobbies">
+  <input type="text" [(ngModel)]="hobby.title" placeholder="Titre">
+  <input type="text" [(ngModel)]="hobby.image" placeholder="Image">
+  <input type="text" [(ngModel)]="hobby.description" placeholder="Description">
+</div>

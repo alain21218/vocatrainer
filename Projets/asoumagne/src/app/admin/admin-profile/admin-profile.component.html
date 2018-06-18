@@ -1,0 +1,29 @@
+<cs-inputfile [(img)]="profile.img"></cs-inputfile>
+
+<input type="text" placeholder="Prénom" [(ngModel)]="profile.firstname">
+<input type="text" placeholder="Nom" [(ngModel)]="profile.lastname">
+<input type="text" placeholder="Nom" [(ngModel)]="profile.birthdate">
+<input type="text" placeholder="Titre" [(ngModel)]="profile.job">
+<input type="text" placeholder="Adresse" [(ngModel)]="profile.address">
+<label class="container">
+  {{ profile.free ? 'Disponible' : 'Indisponible' }}
+  <input type="checkbox" placeholder="Disponible" [(ngModel)]="profile.free">
+  <span class="checkmark"></span>
+</label>
+<input type="text" placeholder="Permis" [(ngModel)]="profile.car">
+<input type="text" placeholder="Email" [(ngModel)]="profile.email">
+
+<fieldset class="fieldset-list">
+  <legend>
+    Portée des déplacements
+    <button (click)="addRange()">
+      <i class="fa fa-plus"></i>
+    </button>
+  </legend>
+  <div class="with-button" *ngFor="let item of profile.range; let i = index; trackBy:tracker">
+    <input type="text" [(ngModel)]="profile.range[i]">
+    <button (click)="removeRange(i)">
+      <i class="fa fa-trash"></i>
+    </button>
+  </div>
+</fieldset>

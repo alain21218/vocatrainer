@@ -1,0 +1,21 @@
+<select [(ngModel)]="currentSkill" multiple>
+  <option *ngFor="let skill of profile.skills" [value]="skill">{{ skill.title }}</option>
+</select>
+
+<div *ngIf="currentSkill && currentSkill[0]">
+  <input type="text" [(ngModel)]="currentSkill[0].title" placeholder="Titre">
+  <ul *ngFor="let tool of currentSkill[0].tools" class="fieldset-list">
+    <li>
+      <label>Titre</label>
+      <input type="text" [(ngModel)]="tool.title" placeholder="Titre">
+    </li>
+    <li>
+        <label>Description</label>
+        <input type="text" [(ngModel)]="tool.description" placeholder="Description">
+      </li>
+    <li>
+      <label>Pourcentage</label>
+      <input type="number" [(ngModel)]="tool.percent" placeholder="Pourcentage">
+    </li>
+  </ul>
+</div>

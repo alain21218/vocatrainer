@@ -1,0 +1,46 @@
+input[type=file] {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+label:hover .hover {
+    display: flex;
+}
+
+label {
+    position: relative;
+}
+
+label .hover {
+    display: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, .5);
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+label .hover span {
+    display: block;
+    margin: auto;
+    padding: 7px 15px;
+    background: #CCC;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #777;
+}
+
+label .hover span:hover {
+    cursor: pointer;
+    background: #AAA;
+}

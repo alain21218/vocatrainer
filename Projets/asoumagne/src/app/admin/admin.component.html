@@ -1,0 +1,25 @@
+<ul class="tabs">
+    <li (click)="tab = 'profile'" [ngClass]="{ selected: tab === 'profile'}">Profile</li>
+    <li (click)="tab = 'skills'" [ngClass]="{ selected: tab === 'skills'}">Compétences</li>
+    <li (click)="tab = 'experiences'" [ngClass]="{ selected: tab === 'experiences'}">Expériences</li>
+    <li (click)="tab = 'education'" [ngClass]="{ selected: tab === 'education'}">Formation</li>
+    <li (click)="tab = 'portfolio'" [ngClass]="{ selected: tab === 'portfolio'}">Portfolio</li>
+    <li (click)="tab = 'hobbies'" [ngClass]="{ selected: tab === 'hobbies'}">Loisirs</li>
+</ul>
+
+<fieldset>
+    <!-- <legend>Administration</legend> -->
+    <cs-admin-profile *ngIf="tab === 'profile'"></cs-admin-profile>
+    <cs-admin-skills *ngIf="tab === 'skills'"></cs-admin-skills>
+    <cs-admin-experiences *ngIf="tab === 'experiences'"></cs-admin-experiences>
+    <cs-admin-education *ngIf="tab === 'education'"></cs-admin-education>
+    <cs-admin-portfolio *ngIf="tab === 'portfolio'"></cs-admin-portfolio>
+    <cs-admin-hobbies *ngIf="tab === 'hobbies'"></cs-admin-hobbies>
+</fieldset>
+<div class="actions">
+    <button (click)="logout()" class="logout"><i class="fa fa-power-off"></i></button>
+    <button (click)="home()" class="home"><i class="fa fa-eye"></i></button>
+    <button (click)="cancel()" class="cancel"><i class="fa fa-undo"></i></button>
+    <button (click)="save()" class="save"><i class="fa fa-check"></i></button>
+</div>
+

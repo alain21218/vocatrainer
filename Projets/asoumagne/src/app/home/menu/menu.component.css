@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    height: 100vh;
+    background: #EEE;
+    z-index: 100;
+}
+
+i {
+    margin: auto;
+    font-size: 24px;
+}
+
+span {
+    flex: auto;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: rgba(29, 29, 29, 0.89);
+
+    box-sizing: border-box;
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 0;
+
+    cursor: pointer;
+
+    display: flex;
+}
+
+a:hover {
+    color: rgba(29, 29, 29, 0.89);
+    text-decoration: none;
+    background: #DDD;
+}

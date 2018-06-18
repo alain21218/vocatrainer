@@ -1,0 +1,10 @@
+:host {
+    display: flex;
+}
+
+fieldset {
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}

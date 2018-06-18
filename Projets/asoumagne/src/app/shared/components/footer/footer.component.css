@@ -1,0 +1,18 @@
+:host {
+    display: block;
+    min-height: 300px;
+    text-align: center;
+    display: flex;
+    background: rgba(29, 29, 29, 0.89);
+    z-index: 10;
+}
+
+a {
+    display: inline;
+    margin: auto;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}

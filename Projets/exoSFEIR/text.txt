@@ -1,0 +1,25 @@
+enx00e04c686624 Link encap:Ethernet  HWaddr 00:e0:4c:68:66:24  
+          inet adr:192.168.20.113  Bcast:192.168.20.255  Masque:255.255.255.0
+          adr inet6: fe80::941:38b:a83b:d714/64 Scope:Lien
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Packets reçus:27994 erreurs:0 :0 overruns:0 frame:0
+          TX packets:21114 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          Octets reçus:21215259 (21.2 MB) Octets transmis:3498298 (3.4 MB)
+
+lo        Link encap:Boucle locale  
+          inet adr:127.0.0.1  Masque:255.0.0.0
+          adr inet6: ::1/128 Scope:Hôte
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          Packets reçus:831117 erreurs:0 :0 overruns:0 frame:0
+          TX packets:831117 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          Octets reçus:1158079805 (1.1 GB) Octets transmis:1158079805 (1.1 GB)
+
+wlp58s0   Link encap:Ethernet  HWaddr 9c:b6:d0:ee:da:f9  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          Packets reçus:244418 erreurs:0 :0 overruns:0 frame:0
+          TX packets:151495 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          Octets reçus:233504186 (233.5 MB) Octets transmis:27345168 (27.3 MB)
+

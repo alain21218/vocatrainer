@@ -1,0 +1,9 @@
+<span>Formation</span>
+<button (click)="addEducation()"><i class="fa fa-plus"></i></button>
+<div *ngFor="let edu of profile.educations">
+  <input type="text" [(ngModel)]="edu.name" placeholder="name">
+  <input type="text" [(ngModel)]="edu.school" placeholder="School">
+  <input type="text" [(ngModel)]="edu.startdate" placeholder="Date de départ">
+  <input type="text" [(ngModel)]="edu.enddate" placeholder="Date de fin">
+  <input type="text" [(ngModel)]="edu.description" placeholder="Description">
+</div>

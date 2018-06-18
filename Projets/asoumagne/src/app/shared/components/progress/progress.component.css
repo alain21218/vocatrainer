@@ -1,0 +1,12 @@
+.box{
+    display: block;
+    background: linear-gradient(#DDD, white);
+    height: 12px;
+    margin: 10px 0;
+}
+
+.inner{
+    display: block;
+    height: 100%;
+    background: #065E52;
+}

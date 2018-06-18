@@ -1,0 +1,22 @@
+.content {
+    padding: 10px;
+    background: white;
+    overflow: hidden;
+}
+
+.left {
+    display: block;
+    position: fixed;
+    border-right: 5px solid #EEE;
+}
+
+.left>img {
+    display: block;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .left {
+        display: none;
+    }
+}

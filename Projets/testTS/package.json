@@ -1,0 +1,21 @@
+{
+  "name": "testts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "code": "tsc -w ./src/index.ts",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "es6-promise": "^4.2.4",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "node-opus": "^0.2.7",
+    "nodemon": "^1.17.2",
+    "streamqueue": "^1.1.2",
+    "ytdl-core": "^0.20.2"
+  }
+}

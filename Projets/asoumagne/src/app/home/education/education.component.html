@@ -1,0 +1,9 @@
+<div class="timeline">
+
+    <div *ngFor="let edu of profile.educations" class="item">
+      <h3>{{ edu.school }}</h3>
+      <h4>{{ edu.title }}</h4>
+      <h5>{{ edu.startdate | date: 'yyyy' }} - {{ edu.enddate | date: 'yyyy' }}</h5>
+    </div>
+  
+  </div>

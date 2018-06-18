@@ -1,0 +1,106 @@
+:host {
+    display: block;
+    padding-bottom: 60px; /* Space for action buttons */
+}
+
+fieldset {
+    padding: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px;
+    width: 100%
+}
+
+.save:hover {
+    background: rgb(56, 83, 56);
+}
+
+.save:active {
+    background: rgb(48, 70, 48);
+}
+
+.save {
+    background: #464;
+}
+
+.home:hover {
+    background: rgb(56, 56, 83);
+}
+
+.home:active {
+    background: rgb(44, 44, 66);
+}
+
+.home {
+    background: rgb(62, 62, 92);
+}
+
+.logout:hover {
+    background: rgb(153, 7, 7);
+}
+
+.logout:active {
+    background: rgb(122, 6, 6);
+}
+
+.logout {
+    background: rgb(187, 13, 13);
+}
+
+.cancel:hover {
+    background: rgb(71, 71, 71);
+}
+
+.cancel:active {
+    background: rgb(59, 59, 59);
+}
+
+.cancel {
+    background: rgb(83, 83, 83);
+}
+
+.actions button {
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 50px;
+    
+    border: none;
+    box-shadow: none;
+    outline: none;
+    
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.actions {
+    position: fixed;
+    bottom: 0; right: 0;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tabs {
+    list-style-type: none;
+    padding: none;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.tabs>li {
+    flex: auto;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tabs>li.selected {
+    border-color: #AAA;
+}

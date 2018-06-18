@@ -1,0 +1,9 @@
+<span>Expériences</span>
+<button (click)="addExperience()"><i class="fa fa-plus"></i></button>
+<div *ngFor="let exp of profile.experiences">
+  <input type="text" [(ngModel)]="exp.company" placeholder="Entreprise">
+  <input type="text" [(ngModel)]="exp.title" placeholder="Titre">
+  <input type="text" [(ngModel)]="exp.startdate" placeholder="Date de départ">
+  <input type="text" [(ngModel)]="exp.enddate" placeholder="Date de fin">
+  <input type="text" [(ngModel)]="exp.description" placeholder="description">
+</div>

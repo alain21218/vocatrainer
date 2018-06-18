@@ -1,0 +1,9 @@
+<div class="timeline">
+
+  <div *ngFor="let exp of profile.experiences" class="item">
+    <h3>{{ exp.company }}</h3>
+    <h4>{{ exp.title }}</h4>
+    <h5>{{ exp.startdate | date: 'MMMM yyyy' | uppercase }} - {{ exp.enddate | date: 'MMMM yyyy' | uppercase }}</h5>
+  </div>
+
+</div>

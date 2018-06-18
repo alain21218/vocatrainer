@@ -1,0 +1,9 @@
+<label for="{{ id }}">
+  <img *ngIf="img" [src]="img | trust" alt="Avatar">
+  <img *ngIf="!img" src="assets/camera.png" alt="Avatar">
+
+  <div class="hover">
+    <span><i class="fa fa-pencil"></i></span>
+  </div>
+</label>
+<input type="file" id="{{ id }}" (change)="onFileChange($event)">

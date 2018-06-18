@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="hidden-xs col-md-2 col-xs-12 nopadding left">
+        <img *ngIf="profile && profile.img" [src]="profile.img | trust" alt="Avatar">
+        <cs-menu></cs-menu>
+    </div>
+
+    <div class="col-md-10 offset-md-2 col-xs-12 nopadding">
+      <section id="profile" class="white-box">
+        <cs-title icon="user">Qui suis-je ?</cs-title>
+        <div class="content">
+          <cs-profile></cs-profile>
+        </div>
+      </section>
+
+      <section id="skills" class="white-box">
+        <cs-title icon="tasks">Compétences</cs-title>
+        <div class="content">
+          <cs-skills></cs-skills>
+        </div>
+      </section>
+
+      <section id="experiences" class="white-box">
+        <cs-title icon="briefcase">Expérience</cs-title>
+        <div class="content">
+          <cs-experiences></cs-experiences>
+        </div>
+      </section>
+
+      <section id="education" class="white-box">
+        <cs-title icon="book">Formation</cs-title>
+        <div class="content">
+          <cs-education></cs-education>
+        </div>
+      </section>
+
+      <section id="portfolio" class="white-box">
+        <cs-title icon="folder-open">Portfolio</cs-title>
+        <div class="content">
+          <cs-portfolio></cs-portfolio>
+        </div>
+      </section>
+
+      <section id="hobbies" class="white-box">
+        <cs-title icon="heart">Loisirs</cs-title>
+        <div class="content">
+          <cs-hobbies></cs-hobbies>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-md-10 offset-md-2 col-xs-12 nopadding">
+      <cs-footer></cs-footer>
+    </div>
+  </div>
+</div>
